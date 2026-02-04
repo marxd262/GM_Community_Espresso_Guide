@@ -4,36 +4,36 @@ The GaggiMate Community guide to great Espresso
 
 Contents:
 
-- [Preamble](#preamble)
-  - [Important notes](#important-notes)
-- [Cheat Sheat](#cheat-sheat)
-- [Core Concepts](#core-concepts)
-  - [Repeatability and Workflow](#repeatability-and-workflow)
-  - [Water as a Solvent](#water-as-a-solvent)
-  - [What does Gaggimate even do?](#what-does-gaggimate-even-do)
-  - [Profiles](#profiles)
-  - [The Taste of coffee](#the-taste-of-coffee)
-  - [The Lifecircle of a shot](#the-lifecircle-of-a-shot)
-- [Variables and how they change the Taste](#variables-and-how-they-change-the-taste)
-    - [Variables before Extraction](#variables-before-extraction)
-      - [Bean choice](#bean-choice)
-      - [Amount of ground coffee (dose) ](#amount-of-ground-coffee-dose)
-      - [Bed depth](#bed-depth)
-      - [Grindsize](#grindsize)
-    - [Variables during a shot](#variables-during-a-shot)
-      - [Yield](#yield)
-      - [Ratio](#ratio)
-      - [Temperature](#temperature)
-      - [Pressure](#pressure)
-      - [Flow](#flow)
-- [Calibration based on Taste](#calibration-based-on-taste)
-- [The Ideas behind Shot styles](#the-ideas-behind-shot-styles)
-- [How to read the GM Graph](#how-to-read-the-gm-graph)
+- [1. Preamble](#1-preamble)
+  - [1.1. Important notes](#11-important-notes)
+- [2. Cheat Sheat](#2-cheat-sheat)
+- [3. Core Concepts](#3-core-concepts)
+  - [3.1. Repeatability and Workflow](#31-repeatability-and-workflow)
+  - [3.2. Water as a Solvent](#32-water-as-a-solvent)
+  - [3.3. What does Gaggimate even do?](#33-what-does-gaggimate-even-do)
+  - [3.4. Profiles](#34-profiles)
+  - [3.5. The Taste of coffee](#35-the-taste-of-coffee)
+  - [3.6. The Lifecircle of a shot](#36-the-lifecircle-of-a-shot)
+- [4. Variables and how they change the Taste](#4-variables-and-how-they-change-the-taste)
+    - [4.0.1. Variables before Extraction](#401-variables-before-extraction)
+      - [4.0.1.1. Bean choice](#4011-bean-choice)
+      - [4.0.1.2. Amount of ground coffee (dose) ](#4012-amount-of-ground-coffee-dose)
+      - [4.0.1.3. Bed depth](#4013-bed-depth)
+      - [4.0.1.4. Grindsize](#4014-grindsize)
+    - [4.0.2. Variables during a shot](#402-variables-during-a-shot)
+      - [4.0.2.1. Yield](#4021-yield)
+      - [4.0.2.2. Ratio](#4022-ratio)
+      - [4.0.2.3. Temperature](#4023-temperature)
+      - [4.0.2.4. Pressure](#4024-pressure)
+      - [4.0.2.5. Flow](#4025-flow)
+- [5. Calibration based on Taste](#5-calibration-based-on-taste)
+- [6. The Ideas behind Shot styles](#6-the-ideas-behind-shot-styles)
+- [7. How to read the GM Graph](#7-how-to-read-the-gm-graph)
 
 
-# Preamble
+# 1. Preamble
 
-## Important notes
+## 1.1. Important notes
 
 The most important info before anything else: Espresso is as complicated as you want it to be. In the end Gaggimate gives you alot of Data and Graphs and so on. It can be very tempting to go heavy into all this data and try to read stuff into it. But thats where a big mistake lies. The data you get is just a trend. It can help with a general direction, especially if you know your input parameters like coffee, water and so on. 
 
@@ -51,7 +51,7 @@ TASTE IS KING!
 
 Ignore the Data and focus on taste. Use the data as a rough estimate but not as a rule. If it tastes good to you, all the data is unimportant. 
 
-# Cheat Sheat
+# 2. Cheat Sheat
 
 Espresso has a limited but tightly coupled set of variables. Because each parameter affects the others, the most reliable way to learn is to change only one variable at a time, pull a shot, and evaluate how the flavor, body, and balance shift. This step‑wise method builds intuition and ensures repeatable results.
 
@@ -92,9 +92,9 @@ Two Guides from Baristahustle that I think are helpfull.
 ![Baristahustle Espresso Compas 2](./assets/The%20Espresso%20Compass-1.jpg)
 
 
-# Core Concepts
+# 3. Core Concepts
 
-## Repeatability and Workflow
+## 3.1. Repeatability and Workflow
 
 I can't stress this point enough. Repeatability is one of the most important factors. The biggest advantage for GM is repeatability. It can replicate shots and do it again and again and again. All this with a stable pressure, flow and temperature. But for that to matter, you have to get some things right. It's important that your puck prep is repeatable. It doesn't matter what you do, you have to be able to repeat it. It starts with weighing the beans. GM cant do its job, if you don't use the same dose for your shots. The dose should have a good distribution in your portafilter and afterwards the tamp should be even with a consistent pressure. GM should also be repeatable set up.To have this repeatable I recommend to implement a workflow and stick to this workflow. Experiment with this and find out what works for you. It doesn't have to be complicated but it should be repeatable. 
 
@@ -133,15 +133,15 @@ The Idea behind WDT is to remove clumps and distribute the grinds evenly. My gri
 
 My checklist and workflow doesn't have to work for you. You should try to see what works for you and experiment if needed. Maybe some steps are too much for you or feel like a hassle? That's totally ok. Just find something that gives you repeatable results.
 
-## Water as a Solvent
+## 3.2. Water as a Solvent
 
 In espresso, hot water functions as a solvent that pulls soluble flavors from the coffee grounds. Changing different variables, alters how much material the water extracts, shaping the final taste.
 
-## What does Gaggimate even do?
+## 3.3. What does Gaggimate even do?
 
 Gaggimate isn't just a magical creation that our saviour the mighty Wasp brought to us to awaken us. It's a fancy PID with extrastep and an automated recipe user. Those Recipes are called Profiles. They can massively change how the coffee tastes but in the end we as the user decide how they do it. These Profiles give us all one important thing: Repeatability.
 
-## Profiles
+## 3.4. Profiles
 
 Espresso profiles are programmable sequences that tell GM what temperature, flow rate, and pressure to apply at each stage of extraction. A profile can contain several sections (such as pre‑infusion, pressure ramp, and steady‑state) each with its own targets. By selecting or customizing a profile, the user decides which aspects of the shot to emphasize, while the ultimate flavor still depends on the barista’s variables (grind size, dose, tamp, bean quality, etc.).
 
@@ -156,17 +156,17 @@ Automatic pro (light - dark)
 
 All profiles have a sweet spot where they work the best. What they aim at and what to look out for is normally described in the Discord thread of the different profiles. Look at those threads first to get a starting point. Afterwards they need to be tweaked by hand.
 
-## The Taste of coffee
+## 3.5. The Taste of coffee
 
 Espresso flavor can be boiled down to two primary taste axes: sour (linked to under‑extraction) and bitter (linked to over‑extraction). Balancing these extremes is the first step toward a good shot. Beyond taste, mouthfeel (the body and viscosity of the espresso)adds another dimension, ranging from thin and light to thick, juicy, or syrupy. Because each coffee bean (origin, roast, processing) expresses a unique combination of acidity, bitterness, and texture, the ideal profile varies from bean to bean. The only reliable way to discover your preferred espresso is to experiment with different variables, tasting the results and adjusting until the desired balance is achieved.
 
-## The Lifecircle of a shot
+## 3.6. The Lifecircle of a shot
 
 During extraction, the coffee bed releases compounds at different rates. The first seconds deliver the bulk of oils, volatile aromatics, and soluble solids, creating a thick mouthfeel, strong crema, and pronounced acidity. As the shot continues, fewer solids are drawn out, the liquid becomes more watery, and the balance shifts toward bitter, higher‑molecular‑weight compounds. An under‑extracted shot therefore tastes sour, while an over‑extracted shot tastes bitter.
 
 A practical way to experience this progression is the onion‑shot test: during extraction switch the cups every 5–6 seconds. This results in multiple cups with an extraction gradient. Taste the cups in reverse order (last‑collected first) to perceive how the early, concentrated portion differs from the later, more diluted portion. This exercise highlights the evolution of flavor, body, and crema across the extraction. It also trains to taste the differences between sour and bitter.
 
-# Variables and how they change the Taste
+# 4. Variables and how they change the Taste
 
 Directly controllable
 
@@ -184,24 +184,24 @@ Indirectly influenced (result of the above)
 - Pressure – generated by the pump; affected by grind, dose, and basket size
 - Extraction time – total time water contacts the coffee, derived from flow and pressure
 
-### Variables before Extraction
+### 4.0.1. Variables before Extraction
 
 These are the variables that get decided before we even start the extraction.
 
-#### Bean choice
+#### 4.0.1.1. Bean choice
 
 - Roast level: Light roasts are denser, so they need a finer grind, higher brew temperature, or more pressure to achieve proper extraction. Dark roasts are more porous and extract more readily, allowing a slightly coarser grind or lower pressure. Adjust your extraction variables accordingly.
 - Freshness: After roasting, beans retain CO₂-especially darker roasts. Allow ~7‑10 days for degassing before brewing. As beans age, volatile aromatics dissipate and the coffee becomes harder to extract, so you may need to fine‑tune grind size, dose, temperature, or pressure to maintain flavor balance. Use beans within the first two months of the roast date for optimal results. That doesn't mean you should throw away older beans.
 
-#### Amount of ground coffee (dose) 
+#### 4.0.1.2. Amount of ground coffee (dose) 
 
 Increasing the dose adds more soluble compounds for the water to extract and creates a deeper puck. The greater bed depth raises the puck’s resistance, slowing flow and extending extraction time. Adjustments in other areas like yield, grind size and so on will be needed.
 
-#### Bed depth
+#### 4.0.1.3. Bed depth
 
 Bed depth is set by dose and basket size; a deeper puck raises hydraulic resistance, so you typically coarsen the grind (or lower the dose) to maintain flow. A smaller‑diameter basket (stepdown basket) can keep the same grind size only if the dose is reduced.
 
-#### Grindsize
+#### 4.0.1.4. Grindsize
 
 Grindsize is probably the best known variable, because for a lot of machines it's one of the only variables that can be changed.  
   
@@ -209,21 +209,21 @@ Grind size controls resistance and therefore extraction: finer → higher extrac
 
 One more or less important factor: Grind size not only sets extraction level but also determines the uniformity of the particle distribution. Finer grinds extract faster but produce a broader range of particle sizes, mixing fast‑extracting fines with slow‑extracting larger particles and blurring flavor clarity. Since all grinders inherently generate some size variance, opting for a modestly coarser grind (which narrows the distribution) can give the clearest, most defined cup - assuming the rest of the brew parameters are adjusted to maintain adequate extraction. A coarser grind size could be achieved with a higher beddepth which could be achieved through a stepdown basket (lower diameter) or using a higher dose.
 
-### Variables during a shot
+### 4.0.2. Variables during a shot
 
 This are variables that get set through the profile or other 
 
-#### Yield
+#### 4.0.2.1. Yield
 
 Yield (output volume) has the greatest influence on espresso taste. A higher yield-more water passing through the puck-extracts more bitter and sweet solubles, reducing the perceived sourness. Conversely, a lower yield emphasizes acidity.
 
-#### Ratio
+#### 4.0.2.2. Ratio
 
 Ratio describes the relationship between dose and yield. The Ratio impacts the concentration and mouthfeel. Lower ratio (e.g., 1 : 1.5) → higher concentration → richer, heavier body and more pronounced mouthfeel.
 
 Higher ratio (e.g., 1 : 2.5) → lower concentration → lighter texture and a more delicate mouthfeel.
 
-#### Temperature
+#### 4.0.2.3. Temperature
 
 Water temperature is the primary driver of solvent power. Higher brew temperatures increase extraction, while lower temperatures reduce it. As a rule of thumb, begin with:
 
@@ -233,22 +233,22 @@ Water temperature is the primary driver of solvent power. Higher brew temperatur
 
 Then adjust up or down in small increments (±1 °C) until the desired balance of acidity, sweetness, and body is achieved for the specific bean.
 
-#### Pressure
+#### 4.0.2.4. Pressure
 
 Higher brew pressure drives water deeper into the coffee puck, extracting more solubles. Excessive early pressure can over‑compact the puck, raising pressure later in the shot.
 
 Pressure is the product of flow rate and puck resistance (dose, grind, basket size).
 
-#### Flow
+#### 4.0.2.5. Flow
 
 Fast flow → short contact time → lower overall extraction (brighter, more acidic, less bitter).
 
 Slow flow → long contact time → higher extraction (richer body, more bitterness).
 
-# Calibration based on Taste
+# 5. Calibration based on Taste
 
 Now we get to the interesting stuff. 
 
-# The Ideas behind Shot styles
+# 6. The Ideas behind Shot styles
 
-# How to read the GM Graph
+# 7. How to read the GM Graph
