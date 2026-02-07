@@ -2,6 +2,7 @@
 
 - [Core Concepts](#core-concepts)
 - [1. Repeatability and Workflow](#1-repeatability-and-workflow)
+  - [1.1. My current workflow](#11-my-current-workflow)
 - [2. Water as a Solvent](#2-water-as-a-solvent)
 - [3. What does Gaggimate even do?](#3-what-does-gaggimate-even-do)
 - [4. Profiles](#4-profiles)
@@ -13,7 +14,7 @@
 
 I can't stress this point enough. Repeatability is one of the most important factors. The biggest advantage for GM is repeatability. It can replicate shots and do it again and again and again. All this with a stable pressure, flow and temperature. But for that to matter, you have to get some things right. It's important that your puck prep is repeatable. It doesn't matter what you do, you have to be able to repeat it. It starts with weighing the beans. GM cant do its job, if you don't use the same dose for your shots. The dose should have a good distribution in your portafilter and afterwards the tamp should be even with a consistent pressure. GM should also be repeatable set up.To have this repeatable I recommend to implement a workflow and stick to this workflow. Experiment with this and find out what works for you. It doesn't have to be complicated but it should be repeatable. 
 
-My current workflow
+## 1.1. My current workflow
 
 1. Preheat my machine for 20 minutes. (The default standby time is too short for this. Increase if you want to preheat a bit longer)
 2. Start my scale
