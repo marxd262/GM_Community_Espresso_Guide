@@ -14,7 +14,7 @@ Puckprep aims for different things. The most important things are:
 
 There are many different Puckprep techniques that deliver different results and are differently effective. But not all techniques work for everyone. What you have to do is find a workflow for puckprep that works for you and isn't a hassle to you. A great workflow does not matter, if it annoys you during your morning espresso making. This is a hobby and we want not only the cup in the end to be enjoyable but the whole journey to that cup.
 
-This is a invitation to experiment with puckprep. Find a workflow that sparks joy to you. See what happens if you dont do a step, if this makes it easier to you. If the cup is less enjoyable for you, you can just include the step or a alternative step back in. Don't overcomplicate things.
+This is an invitation to experiment with puckprep. Find a workflow that sparks joy to you. See what happens if you dont do a step, if this makes it easier to you. If the cup is less enjoyable for you, you can just include the step or a alternative step back in. Don't overcomplicate things.
 
 # A List of Puckprep techniques
 
